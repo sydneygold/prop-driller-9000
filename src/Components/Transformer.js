@@ -1,12 +1,12 @@
 import React from 'react';
 
-function Transformer() {
+function Transformer({url, name}) {
 
   return (
     <img
       className = 'transformer'
-      src = {}
-      alt = {}
+      src ={url}
+      alt ={name}
     />
   );
 }

@@ -24,6 +24,7 @@ header {
 
 img[alt="logo"] {
   height: 40vmin;
+  cursor: pointer;
 }
 
 .transformers-section {

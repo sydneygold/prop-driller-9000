@@ -22,13 +22,23 @@ export default class App extends React.Component {
         name: 'omega',
         url: 'http://pngimg.com/uploads/transformers/transformers_PNG3.png'
       }
-    ]
+    ],
+    isToggled: false
+  }
+
+  showTransformers = () => {
+    this.setState({isToggled: !this.state.isToggled})
   }
 
   render() {
     return (
       <div className="App">
-        <Header />
+        <Header 
+          proptimusLogo={this.state.proptimusLogo} 
+          proptimusii={this.state.proptimusii}
+          showTransformers={this.showTransformers}
+          isToggled={this.state.isToggled}
+        />
       </div>
     );
   }
